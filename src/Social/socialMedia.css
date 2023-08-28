@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  .wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .button {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    margin: 0 5px;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out, background 0.3s ease-out;
+    overflow: hidden;
+  }
+  
+  .button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 12px 15px rgba(0, 0, 0, 0.15);
+    background:linear-gradient(90deg, #9575CD , #673AB7 );
+  }
+  
+  .button .icon {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Centrar vertical y horizontalmente */
+    align-items: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+  }
+  
+  .button .icon svg {
+    font-size: 25px;
+    color: #333;
+  }
+  
+  
+  .button:hover .icon svg {
+    color: white;
+  }
+  
